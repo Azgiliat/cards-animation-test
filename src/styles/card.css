@@ -1,0 +1,37 @@
+.card {
+  aspect-ratio: 0.66;
+  position: relative;
+  transform-style: preserve-3d;
+  max-width: 185px;
+}
+
+.card__front, .card__back {
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__front {
+  transform: rotateY(180deg);
+}
+
+.select-card {
+  animation: select-card 3s ease forwards;
+}
+
+@keyframes select-card {
+  30% {
+    transform: scale(1.2) translateY(-50%);
+  }
+
+  90% {
+    transform: scale(1) translateY(-90%) rotateY(180deg);
+  }
+
+  100% {
+    transform: scale(1) translateY(-100%) rotateY(180deg);
+  }
+}

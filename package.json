@@ -1,0 +1,24 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint:stylelint": "yarn stylelint --cache \"**/*.{html,css,vue}\"",
+    "lint:stylelint:fix": "yarn lint:stylelint --fix"
+  },
+  "devDependencies": {
+    "stylelint": "15.1.0",
+    "stylelint-config-html": "1.1.0",
+    "stylelint-config-prettier": "9.0.5",
+    "stylelint-config-rational-order": "0.1.2",
+    "stylelint-config-standard": "30.0.1",
+    "stylelint-order": "6.0.2"
+  },
+  "dependencies": {
+    "vite": "^4.2.1"
+  }
+}

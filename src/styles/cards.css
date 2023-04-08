@@ -1,0 +1,20 @@
+:root {
+  --cards-gap: 10px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --cards-gap: 30px;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: var(--cards-gap);
+  padding-top: calc(100% / 3 / 0.66);
+}
+
+.cards__card {
+  width: calc(33% - 10px / 2);
+}
